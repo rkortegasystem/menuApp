@@ -6,7 +6,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="5dp"
         tools:context=".index">
+    <!--<TextView android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:text="Bienvenido al sistema de toma de pedimos móvil, sistema exclusivo para meseros."-->
+              <!--android:textSize="32dp"/>-->
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/login_icon"
+                   android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Username"/>
@@ -21,4 +33,12 @@
               android:layout_height="wrap_content"
               android:id="@+id/txtPassword"
               android:inputType="textPassword"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@android:drawable/ic_secure"
+                android:text="Iniciar sesión"/>
+    </RelativeLayout>
 </LinearLayout>
