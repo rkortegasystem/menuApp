@@ -6,17 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="5dp"
+        android:padding="20dp"
         tools:context=".index">
-    <!--<TextView android:layout_width="wrap_content"-->
-              <!--android:layout_height="wrap_content"-->
-              <!--android:text="Bienvenido al sistema de toma de pedimos móvil, sistema exclusivo para meseros."-->
-              <!--android:textSize="32dp"/>-->
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content">
         <ImageView android:layout_width="100dp"
                    android:layout_height="100dp"
-                   android:src="@drawable/login_icon"
+                   android:src="@drawable/mesero_icon"
                    android:layout_centerHorizontal="true"/>
     </RelativeLayout>
     <TextView android:layout_width="wrap_content"
@@ -28,17 +24,24 @@
               android:inputType="textVisiblePassword"/>
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Password:"/>
+              android:text="Password"/>
     <EditText android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/txtPassword"
               android:inputType="textPassword"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtResult"/>
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content">
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:drawableLeft="@android:drawable/ic_secure"
-                android:text="Iniciar sesión"/>
+                android:text="LOGIN"
+                android:background="@color/colorSuccess"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/btnLogin"/>
     </RelativeLayout>
 </LinearLayout>
